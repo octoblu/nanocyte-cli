@@ -4,7 +4,8 @@
   "description": "Run Octoblu Nanocytes in the command line",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "coffee command.coffee",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
