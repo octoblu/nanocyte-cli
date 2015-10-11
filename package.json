@@ -1,0 +1,28 @@
+{
+  "name": "nanocyte-cli",
+  "version": "1.0.0",
+  "description": "Run Octoblu Nanocytes in the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/nanocyte-cli.git"
+  },
+  "keywords": [
+    "Octoblu",
+    "meshblu"
+  ],
+  "author": "redaphid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/nanocyte-cli/issues"
+  },
+  "homepage": "https://github.com/octoblu/nanocyte-cli#readme",
+  "dependencies": {
+    "nanocyte-component-equal": "^1.0.2",
+    "simple-json-parse-stream": "^1.0.1",
+    "simple-json-stringify-stream": "^1.0.0"
+  }
+}

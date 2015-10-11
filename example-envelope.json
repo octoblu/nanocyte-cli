@@ -1,0 +1,8 @@
+{
+  "config" :
+    {
+      "left": 5,
+      "right": 5
+    },
+    "message": "omg, a message"
+}
