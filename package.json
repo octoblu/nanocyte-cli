@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/octoblu/nanocyte-cli.git"
+    "url": "git+https://github.com/octoblu/nanocyte-util.git"
   },
   "keywords": [
     "Octoblu",
@@ -21,9 +21,9 @@
   "author": "redaphid",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/octoblu/nanocyte-cli/issues"
+    "url": "https://github.com/octoblu/nanocyte-util/issues"
   },
-  "homepage": "https://github.com/octoblu/nanocyte-cli#readme",
+  "homepage": "https://github.com/octoblu/nanocyte-util#readme",
   "dependencies": {
     "commander": "^2.8.1",
     "simple-json-parse-stream": "^1.0.1",
