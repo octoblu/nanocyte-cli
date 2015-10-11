@@ -2,7 +2,7 @@ commander = require 'commander'
 JSONParseStream = require 'simple-json-parse-stream'
 JSONStringifyStream = require 'simple-json-stringify-stream'
 NanocyteEnvelopeWrapperStream = require './lib/nanocyte-envelope-wrapper-stream'
-
+path = require 'path'
 commander.version('1.0.0')
   .arguments '<nanocyte>'
   .option '-d, --data-file <data>', 'file containing the data for the nanocyte node'
@@ -12,10 +12,17 @@ commander.version('1.0.0')
 return commander.outputHelp() unless commander.args[0]?
 data = {}
 config = {}
-data = require(commander.dataFile) if commander.dataFile?
-config = require(commander.configFile) if commander.configFile?
+if commander.dataFile?
+  dataPath = path.join process.cwd(), commander.dataFile
+  data = require dataPath
 
-nanocyteClass = require commander.args[0]
+if commander.configFile?
+  configPath = path.join process.cwd(), commander.configFile
+  config = require configPath
+
+
+nanocytePath = path.join process.cwd(), commander.args[0]
+nanocyteClass = require nanocytePath
 
 process.stdin
   .pipe new JSONParseStream

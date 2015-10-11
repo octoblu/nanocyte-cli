@@ -1,8 +1,11 @@
 {
-  "name": "nanocyte-cli",
+  "name": "nanocyte-util",
   "version": "1.0.0",
   "description": "Run Octoblu Nanocytes in the command line",
   "main": "index.js",
+  "bin": {
+    "nanocyte-util": "./command.js"
+  },
   "scripts": {
     "start": "coffee command.coffee",
     "test": "echo \"Error: no test specified\" && exit 0"
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/octoblu/nanocyte-cli#readme",
   "dependencies": {
+    "commander": "^2.8.1",
     "simple-json-parse-stream": "^1.0.1",
     "simple-json-stringify-stream": "^1.0.0"
   }
