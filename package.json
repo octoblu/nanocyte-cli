@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/octoblu/nanocyte-cli#readme",
   "dependencies": {
-    "nanocyte-component-equal": "^1.0.2",
     "simple-json-parse-stream": "^1.0.1",
     "simple-json-stringify-stream": "^1.0.0"
   }
